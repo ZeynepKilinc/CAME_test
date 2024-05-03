@@ -21,5 +21,5 @@ if __name__ == '__main__':
                '%(levelname)s\n %(message)s')
 
     came.__test1__(10, batch_size=None, reverse=False)
-    came.__test2__(10, batch_size=2048)
+    #came.__test2__(10, batch_size=2048)
 

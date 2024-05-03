@@ -9,7 +9,7 @@ import logging
 import numpy as np
 import pandas as pd
 import scanpy as sc
-
+import sys
 from scipy import sparse
 import torch as th
 import dgl
@@ -444,7 +444,7 @@ class AlignedDataPair(object):
             (ntypes['v'], etypes['vo'], ntypes['o']): ov_adj.T,
         }
         if self._oo_adj is not None:
-            edge_dict[(ntypes['o'], etypes['oo'], ntypes['o'])] = self._oo_adj
+             edge_dict[(ntypes['o'], etypes['oo'], ntypes['o'])] = self._oo_adj
         if selfloop_o:
             edge_dict[
                 (ntypes['o'], f'self_loop_{ntypes["o"]}', ntypes['o'])

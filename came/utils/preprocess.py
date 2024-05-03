@@ -2229,7 +2229,7 @@ def compute_and_get_DEGs(adata: sc.AnnData,
 @dec_timewrapper('leiden')
 def get_leiden_labels(adata, hvgs=None,
                       force_redo=False,
-                      nneigh=20, reso=0.4, n_pcs=30,
+                      nneigh=20, reso=0.8, n_pcs=30,
                       neighbors_key=None,
                       key_added='leiden',
                       copy=False,

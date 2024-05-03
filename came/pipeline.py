@@ -421,7 +421,7 @@ def main_for_unaligned(
     #     ))
     logging.info('preparing DataPair object...')
     dpair = datapair_from_adatas(adatas, vars_feat=vars_feat,
-                                 df_varmap=df_varmap,
+                                 df_varmap=None,
                                  df_varmap_1v1=df_varmap_1v1, oo_adjs=scnets,
                                  vars_as_nodes=vars_as_nodes,
                                  union_var_nodes=union_var_nodes,
@@ -1043,7 +1043,7 @@ def __test1__(n_epochs: int = 5, batch_size=None, reverse=False):
 
     key_class = 'cell_ontology_class'
     time_tag = make_nowtime_tag()
-    resdir = Path('_temp') / f'{dsnames}-{time_tag}'
+    resdir = Path('_temp/norm_reso0.8_1')
 
     came_inputs, (adata1, adata2) = preprocess_aligned(
         adatas,

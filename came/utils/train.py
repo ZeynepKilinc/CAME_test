@@ -122,6 +122,7 @@ def prepare4train(
         test_idx = LongTensor(test_idx)
 
     g = dpair.get_whole_net(rebuild=False, )
+    print(labels)
     g.nodes[node_cls_type].data[key_label] = labels  # date: 211113
 
     ENV_VARs = dict(
