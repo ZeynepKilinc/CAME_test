@@ -6,6 +6,21 @@
 CAME is a tool for **Cell-type Assignment and Module Extraction**, based on a heterogeneous graph neural network.
 
 For detailed usage, please refer to [CAME-Documentation](https://xingyanliu.github.io/CAME/index.html).
+### Evaluation of the method
+
+- The results of the performance tests can be foud in the docs/generated_images folder
+- The R codes to generate these figures can be found in the docs/plot_codes folder (*codes to be cleaned*)
+- The Power Point Slide that includes the detailed explanation and summary of the method and the analyses can be found from [this link](https://docs.google.com/presentation/d/1dVnnNGNsZedRwAf4YY51ntLx1QW0ID5IM1A56FaZlss/edit?usp=drive_link)
+- 
+
+
+
+
+
+
+
+
+
 
 <img src="docs/_images/Fig1ABC.png" width="600"/>
 

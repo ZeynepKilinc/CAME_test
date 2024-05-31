@@ -1043,7 +1043,7 @@ def __test1__(n_epochs: int = 5, batch_size=None, reverse=False):
 
     key_class = 'cell_ontology_class'
     time_tag = make_nowtime_tag()
-    resdir = Path('_temp/norm_reso0.8_1')
+    resdir = Path('_temp/norm_clusReso0.8_5')
 
     came_inputs, (adata1, adata2) = preprocess_aligned(
         adatas,
@@ -1100,7 +1100,7 @@ def __test2__(n_epochs: int = 5, batch_size=None, reverse=False):
 
     key_class = 'cell_ontology_class'
     time_tag = make_nowtime_tag()
-    resdir = Path('_temp') / f'{dsnames}-{time_tag}'
+    resdir = Path('_temp/norm_reso0.8_1')
 
     came_inputs, (adata1, adata2) = preprocess_unaligned(
         adatas,
